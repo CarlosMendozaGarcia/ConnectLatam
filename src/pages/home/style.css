@@ -1,0 +1,25 @@
+.home{
+    animation-name: beginning;
+    animation-duration: 3s;
+}
+
+.card .title h1{
+    font-size: 50px;
+    margin: 0;
+}
+
+.card h2{
+    font-size: 45px;
+}
+
+@keyframes beginning{
+    0%{
+        transform:scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform:scale(1);
+        opacity:1;
+        
+    }
+}
