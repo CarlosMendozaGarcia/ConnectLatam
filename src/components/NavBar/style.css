@@ -12,12 +12,10 @@
   
   a{
     text-decoration: none;
-    color: #f2f2f2;
   }
 
   nav {
     background-color: #4a88d9;
-    color: #f2f2f2;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -28,9 +26,6 @@
     flex-grow: 0.05;
     display: flex;
     justify-content: center;
-    animation-name: fadeIn;
-    animation-duration: 1.5s; 
-    animation-delay: 2s; 
   }
   
   nav .login span::before{
@@ -44,9 +39,6 @@
     display: flex;
     flex-direction: column;
     justify-content:baseline;
-    animation-name: fadeIn;
-    animation-duration: 1.5s;
-    animation-delay: 2s;
   }
   
   nav .name h1{
@@ -80,6 +72,7 @@
   nav .navlist ul li:hover{
     scale:1.2;
   }
+
   nav .navlist ul li::before{
     font-family: iconos;
     content:'\e900';
@@ -90,37 +83,18 @@
 
   nav .navlist ul li a{
     text-decoration: none;
-    color: #f2f2f2;
     font-size: 20px;
   }
 
-  nav .navlist ul li, nav .navlist ul li a {
-    animation-name: fadeIn;
-    animation-duration: 1.5s;
-    animation-delay: 2s;
-  }
 
   nav .language {
     font-size: 20px;
     display:flex;
     align-items: center;
     gap: 10px;
-    animation-name: fadeIn;
-    animation-duration:1.5s;
-    animation-delay: 2s;
-
   }
   
   nav .language span::before {
     font-family: iconos;
     content:'\ea43';
-  }
-
-  @keyframes fadeIn {
-    0%{
-      color:#4a88d9
-    }
-    100%{
-      color:#f2f2f2
-    }
   }
