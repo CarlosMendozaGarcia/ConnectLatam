@@ -34,9 +34,9 @@
     padding-bottom: 50px;
 }
 
-.AboutUs::-webkit-scrollbar {
+.card::-webkit-scrollbar {
     width: 10px;
 }
-.AboutUs::-webkit-scrollbar-track{
+.card::-webkit-scrollbar-track{
     background: transparent;
 }

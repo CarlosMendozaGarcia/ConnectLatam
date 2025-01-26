@@ -21,7 +21,7 @@ export const AboutUs = () => {
                             la unión es clave para hacer notar el poder de los fans latinos de ENHYPEN.</p>
                     </div>
                     <div className='Mision'>
-                        <h2>Mision</h2>
+                        <h2>Misión</h2>
                         <p>Unificar a los ENGENE de Latinoamérica bajo una estructura sólida y colaborativa, enfocada en liderar
                             votaciones globales con estrategias claras, capacitación constante y una comunicación efectiva.
                         </p>
@@ -31,7 +31,7 @@ export const AboutUs = () => {
                         </p>
                     </div>
                     <div className='Vision'>
-                        <h2>Vision</h2>
+                        <h2>Visión</h2>
                         <p>Convertirnos en el equipo de votación más influyente y representativo de Latinoamérica,
                             reconocido globalmente por nuestra capacidad de unión, estrategia y dedicación al apoyo
                             incondicional de ENHYPEN, demostrando el impacto significativo del fandom latino en el éxito
@@ -43,7 +43,7 @@ export const AboutUs = () => {
                     </div>
                     <div className='Contacto'>
                         <h2>Contacto</h2>
-                        <p>Correo:connectvty024@gmail.com</p>
+                        <p>Correo: connectvty024@gmail.com</p>
                         <p>X: @connect_latamvt</p>
                         <p>IG: @connectlatam_vt</p>
                     </div>

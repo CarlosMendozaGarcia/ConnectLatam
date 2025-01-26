@@ -65,6 +65,7 @@
   }
   
   nav .navlist ul li{
+    position:relative;
     transition: 150ms ease;
     
   }
@@ -98,3 +99,5 @@
     font-family: iconos;
     content:'\ea43';
   }
+
+  
