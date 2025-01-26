@@ -11,9 +11,10 @@
     height: 60%;
     border-radius: 20px 20px 0 0;
     margin: 9.25% 0% 20% 20%;
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 50px;
     gap: 10px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 

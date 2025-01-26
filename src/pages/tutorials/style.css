@@ -1,0 +1,54 @@
+.Tutorials .card::-webkit-scrollbar{
+    width: 10px;
+}
+
+.Tutorials .card::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.Tutorials .card h2{
+    font-size: 45px;
+}
+
+.Tutorials .card .infoTutorial {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-bottom: 50px;
+    width: 90%;
+}
+
+.Tutorials .card h3{
+    font-size: 20px;
+}
+
+.Tutorials .card .infoTutorial .General, .Tutorials .card .infoTutorial .Streaming, .Tutorials .card .infoTutorial .Comeback {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:100%;
+} 
+.Tutorials .card .infoTutorial .viewList{
+    display: flex;
+    gap: 20px;
+    overflow-x:auto;
+    width: 100%
+}
+
+.viewList::-webkit-scrollbar{
+    width: 10px;
+}
+.viewList::-webkit-scrollbar-track{
+    background: transparent;
+}
+.viewList::-webkit-scrollbar-thumb{
+    width: 20px;
+    background:#accaf2;
+    border-radius: 6px;
+}
+
+.Tutorials .card .infoTutorial .viewList a img {
+    height: 100px;
+    width: 200px;
+}
