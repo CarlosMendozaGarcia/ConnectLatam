@@ -3,11 +3,13 @@
     animation-duration: 1s;
 }
 
+
 nav .login a,
 nav .name a,
 nav .navlist ul,
 nav .navlist ul li a,
-nav .language {
+nav .language,
+nav .language p {
     color: #4a88d9;
     animation-name: fadeIn;
     animation-duration: 1.5s;
@@ -22,13 +24,16 @@ nav .language {
     animation-fill-mode:forwards;
     opacity: 0;
 }
-.card .title h1 {
-    font-size: 50px;
+.home .card  .title h1 {
+    font-family:'Courier New, Courier, monospace';
+    font-size: 85px;
     margin: 0;
 }
 
-.card h2 {
+.home .card h2 {
+    width: 70%;
     font-size: 45px;
+    flex-wrap: wrap;
 }
 
 @keyframes beginning {

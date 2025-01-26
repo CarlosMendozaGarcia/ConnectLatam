@@ -26,7 +26,7 @@ export const NavBar = () => {
                     </ul>
                 </div>
                 <div className="language">
-                    <p>idioma </p>
+                    <p> idioma </p>
                     <span></span>
                 </div>
             </nav>

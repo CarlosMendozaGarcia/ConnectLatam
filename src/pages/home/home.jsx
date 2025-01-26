@@ -13,7 +13,7 @@ export const Home = () => {
                         <h1>Bienvenidos a</h1>
                         <h1>Connect Latam VT</h1>
                     </div>
-                    <h2>Slogan</h2>
+                    <h2>Con cada voto creamos un nuevo destino</h2>
                 </Card>
             </Banner>
 
