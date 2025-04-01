@@ -14,7 +14,11 @@
     font-size: 45px;
 }
 
-.AboutUs .card p{
+.AboutUs .card .SobreNosotros {
+    align-self: center;
+}
+
+.AboutUs .card p {
     text-align: justify;
     justify-self: center;
     width:80%;
