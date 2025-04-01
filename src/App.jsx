@@ -2,7 +2,8 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Navigate,  
+  Navigate,
+  HashRouter,  
 } from "react-router-dom"
 
 import './App.css'
@@ -13,14 +14,12 @@ import { Tutorials } from './pages/tutorials/tutorials.jsx'
 
 function App() {
   return (
-    <BrowserRouter>
     <Routes>
       <Route path="/" element={<Start />} />
       <Route path="/Home" element={<Home/>} />
       <Route path="/AboutUs" element={<AboutUs/>} />
       <Route path="/Tutorials" element={<Tutorials/>} />
     </Routes>
-    </BrowserRouter>
   )
 }
 
