@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redireccionando...</title>
+  <meta http-equiv="refresh" content="0;url=/ConnectLatam/">
+  <script>
+    // Guarda la ruta completa para que React Router la use después
+    sessionStorage.redirect = location.pathname + location.search + location.hash;
+    // Redirige al index.html de tu app
+    location.replace("/ConnectLatam/");
+  </script>
+</head>
+<body>
+  <p>Redireccionando... Si no pasa nada, <a href="/ConnectLatam/">haz clic aquí</a>.</p>
+</body>
+</html>
