@@ -19,10 +19,18 @@ export const NavBar = () => {
                 </div>
                 <div className="navlist">
                     <ul>
-                        <li><a href="/AboutUs">Sobre Nosotros</a></li>
-                        <li><a href="/News">Noticias</a></li>
-                        <li><a href="/Projects">Proyectos</a></li>
-                        <li><a href="/Tutorials">Tutoriales</a></li>
+                        <li>
+                            <Link to="/AboutUs">Sobre Nosotros</Link>
+                        </li>
+                        <li>
+                            <Link to="/News">Noticias</Link>
+                        </li>
+                        <li>
+                            <Link to="/Projects">Proyectos</Link>
+                        </li>
+                        <li>
+                            <Link to="/Tutorials">Tutoriales</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="language">
