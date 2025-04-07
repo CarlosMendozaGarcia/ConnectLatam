@@ -1,9 +1,7 @@
 import {
-  BrowserRouter,
   Routes,
   Route,
-  Navigate,
-  HashRouter,  
+  Navigate,  
 } from "react-router-dom"
 
 import './App.css'
@@ -19,6 +17,7 @@ function App() {
       <Route path="/Home" element={<Home/>} />
       <Route path="/AboutUs" element={<AboutUs/>} />
       <Route path="/Tutorials" element={<Tutorials/>} />
+      <Route path="*" element={<h1>404 - Página no encontrada</h1>} />
     </Routes>
   )
 }
