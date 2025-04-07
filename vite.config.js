@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     outDir: 'build',  // Asegúrate de que la salida de los archivos sea en la carpeta 'build'
   },
-  base: '/ConnectLatam/',
+  base: '/ConnectLatam',
 })
