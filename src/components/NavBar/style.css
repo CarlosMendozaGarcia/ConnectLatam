@@ -12,6 +12,12 @@
   
   a{
     text-decoration: none;
+    color: #4a88d9;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
   }
 
   nav {
@@ -87,7 +93,6 @@
     font-size: 20px;
   }
 
-
   nav .language {
     font-size: 20px;
     display:flex;
@@ -100,4 +105,12 @@
     content:'\ea43';
   }
 
-  
+  @keyframes fadeIn {
+    0% {
+        color: #4a88d9
+    }
+
+    100% {
+        color: #f2f2f2
+    }
+}

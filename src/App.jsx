@@ -1,9 +1,10 @@
 import {
   Routes,
   Route,
-  Navigate,
+  useNavigate,
 } from "react-router-dom"
 
+import {useEffect} from "react"
 import './App.css'
 import { Start } from './pages/start/start.jsx'
 import { Home } from './pages/home/home.jsx'
@@ -11,16 +12,6 @@ import { AboutUs } from './pages/aboutUs/aboutUs.jsx'
 import { Tutorials } from './pages/tutorials/tutorials.jsx'
 
 function App() {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const redirect = sessionStorage.getItem('redirect');
-    if (redirect) {
-      sessionStorage.removeItem('redirect');
-      navigate(redirect);
-    }
-  }, [navigate]);
-  
   return (
     <Routes>
       <Route path="/" element={<Start />} />

@@ -3,7 +3,6 @@
     animation-duration: 1s;
 }
 
-
 nav .login a,
 nav .name a,
 nav .navlist ul,
@@ -26,13 +25,12 @@ nav .language p {
 }
 .home .card  .title h1 {
     font-family:'Courier New, Courier, monospace';
-    font-size: 85px;
+    font-size: 9vw;
     margin: 0;
 }
 
 .home .card h2 {
     width: 70%;
-    font-size: 45px;
     flex-wrap: wrap;
 }
 
