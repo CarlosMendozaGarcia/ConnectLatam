@@ -1,7 +1,6 @@
 .card {
-    /* azul clarito: #accaf2 */
-    background: #5b74a6;
-    color: #accaf2;
+    background: var(--color-secondary);
+    color: var(--color-text);
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -15,5 +14,11 @@
     gap: 10px;
     overflow-y: auto;
     overflow-x: hidden;
+    /* animation */
+    animation-name: push;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode:forwards;
+    opacity: 0;
 }
 

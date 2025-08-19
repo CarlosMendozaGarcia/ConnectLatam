@@ -7,7 +7,7 @@ export const Start = () => {
     const navigate = useNavigate()
 
     const handleclick = async () => {
-        navigate("/Home")
+        navigate("/Main")
     }
 
     return (

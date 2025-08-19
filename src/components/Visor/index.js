@@ -1,0 +1,1 @@
+export {default as Visor} from './visor'

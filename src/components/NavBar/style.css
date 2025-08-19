@@ -1,116 +1,124 @@
 @font-face {
-    font-family: 'iconos';
-    src:  url('../../assets/fonts/icomoon.eot?3k9hld');
-    src:  url('../../assets/fonts/icomoon.eot?3k9hld#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/icomoon.ttf?3k9hld') format('truetype'),
-      url('../../assets/fonts/icomoon.woff?3k9hld') format('woff'),
-      url('../../assets/fonts/icomoon.svg?3k9hld#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  a{
-    text-decoration: none;
-    color: #4a88d9;
-    animation-name: fadeIn;
-    animation-duration: 1.5s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+  font-family: "iconos";
+  src: url("../../assets/fonts/icomoon.eot?3k9hld");
+  src: url("../../assets/fonts/icomoon.eot?3k9hld#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/icomoon.ttf?3k9hld") format("truetype"),
+    url("../../assets/fonts/icomoon.woff?3k9hld") format("woff"),
+    url("../../assets/fonts/icomoon.svg?3k9hld#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
-  }
+a {
+  text-decoration: none;
+  color: #f2f2f2;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
 
-  nav {
-    background-color: #4a88d9;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  nav .login {
-    flex-grow: 0.05;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav .login span::before{
-    font-family: iconos;
-    content:'\e971';
-    font-size: 50px;
-  }
-  
-  nav .name {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content:baseline;
-  }
-  
-  nav .name h1{
-    margin: 0;
-  }
-  
-  nav .name span::before{
-    font-family: iconos;
-    content: '\e900';
-    font-size: 28px;
-    font-weight:lighter;
-  }
-  
-  nav .navlist {
-    flex-grow: 0.9;
-    padding: 0px 10px;
-  }
-  nav .navlist ul{
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style-type: none;
-    
-  }
-  
-  nav .navlist ul li{
-    position:relative;
-    transition: 150ms ease;
-    
-  }
+nav {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
 
-  nav .navlist ul li:hover{
-    scale:1.2;
-  }
+nav .login {
+  flex-grow: 0.05;
+  display: flex;
+  justify-content: center;
+}
 
-  nav .navlist ul li::before{
-    font-family: iconos;
-    content:'\e900';
-    font-size: 18px;
-    align-self: center;
-    padding: 0px 10px;
-  }
+nav .login span::before {
+  font-family: iconos;
+  content: "\e971";
+  font-size: 50px;
+}
 
-  nav .navlist ul li a{
-    text-decoration: none;
-    font-size: 20px;
-  }
+nav .name {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+}
 
-  nav .language {
-    font-size: 20px;
-    display:flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  nav .language span::before {
-    font-family: iconos;
-    content:'\ea43';
-  }
+nav .name h1 {
+  margin: 0;
+  color: #f2f2f2;
+  animation: fadeIn 1s ease-in forwards;
+}
 
-  @keyframes fadeIn {
-    0% {
-        color: #4a88d9
-    }
+nav .name span::before {
+  font-family: iconos;
+  content: "\e900";
+  font-size: 28px;
+  font-weight: lighter;
+}
 
-    100% {
-        color: #f2f2f2
-    }
+nav .navlist {
+  flex-grow: 0.9;
+  padding: 0px 10px;
+}
+nav .navlist ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav .navlist ul li {
+  position: relative;
+  transition: 150ms ease;
+}
+
+nav .navlist ul li:hover {
+  scale: 1.2;
+}
+
+nav .navlist ul li::before {
+  font-family: iconos;
+  content: "\e908";
+  font-size: 18px;
+  align-self: center;
+  padding: 0px 10px;
+}
+
+nav .navlist ul li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav .login a,
+nav .name a,
+nav .navlist ul,
+nav .navlist ul li a,
+nav .language,
+nav .language p {
+  color: #f2f2f2;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+nav .navlist-mobile .menu-button{
+  border: none;
+  background-color: var(--color-primary);
+
+}
+nav .navlist-mobile .menu-button .dots::before {
+  font-family: iconos;
+  content: "\e904";
+  font-size: 2em;
+  color: #f2f2f2;
+
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

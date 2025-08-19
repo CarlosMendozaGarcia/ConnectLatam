@@ -1,6 +1,5 @@
 import React from "react"
 import {useState, useEffect} from 'react'
-import { Link } from "react-router-dom"
 import './style.css'
 function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window;
@@ -29,31 +28,43 @@ export default function useWindowDimensions() {
 
 
 
-export const NavBar = () => {
-    const { height, width } = useWindowDimensions()
+export const NavBar = ({ onSelectPage }) => {
+    const { height, width } = useWindowDimensions();
 
-    function Nav({width}) {
+    function Nav({ width }) {
         if (width > 800) {
-            return (<div className="navlist">
-                <ul>
-                    <li>
-                        <Link to="/AboutUs">Sobre Nosotros</Link>
-                    </li>
-                    <li>
-                        <Link to="/News">Noticias</Link>
-                    </li>
-                    <li>
-                        <Link to="/Projects">Proyectos</Link>
-                    </li>
-                    <li>
-                        <Link to="/Tutorials">Tutoriales</Link>
-                    </li>
-                </ul>
-            </div>)
+            return (
+                <div className="navlist">
+                    <ul>
+                        <li onClick={() => onSelectPage("AboutUs")}>Sobre Nosotros</li>
+                        <li onClick={() => onSelectPage("News")}>Noticias</li>
+                        {/* <li onClick={() => onSelectPage("Projects")}>Proyectos</li> */}
+                        <li onClick={() => onSelectPage("Tutorials")}>Tutoriales</li>
+                    </ul>
+                </div>
+            );
         } else {
-            return(<div>
-                
-            </div>)
+            const [menuOpen, setMenuOpen] = useState(false);
+
+            return (
+                <div className="navlist-mobile">
+                    <button
+                        className="menu-button"
+                        onClick={() => setMenuOpen(!menuOpen)}
+                        aria-label="Open navigation menu"
+                    >
+                        <span className="dots"></span>
+                    </button>
+                    {menuOpen && (
+                        <ul className="mobile-menu">
+                            <li onClick={() => { setMenuOpen(false); onSelectPage("AboutUs"); }}>Sobre Nosotros</li>
+                            <li onClick={() => { setMenuOpen(false); onSelectPage("News"); }}>Noticias</li>
+                            {/* <li onClick={() => { setMenuOpen(false); onSelectPage("Projects"); }}>Proyectos</li> */}
+                            <li onClick={() => { setMenuOpen(false); onSelectPage("Tutorials"); }}>Tutoriales</li>
+                        </ul>
+                    )}
+                </div>
+            );
         }
     }
     return (
@@ -64,14 +75,12 @@ export const NavBar = () => {
                         <span></span>
                     </a>
                 </div>
-                <div className="name">
-                    <Link to="/Home">
-                        <h1>C<span></span>NNECT</h1>
-                        <h1>LATAM VT</h1>
-                    </Link>
+                <div className="name" onClick={() => onSelectPage("Home") } style={{ cursor: "pointer" }}>
+                    <h1>C<span></span>NNECT</h1>
+                    <h1>LATAM VT</h1>
                 </div>
-                <Nav width={width}/>
+                <Nav width={width} />
             </nav>
         </header>
-    )
+    );
 }

@@ -1,0 +1,15 @@
+.layout-container {
+  animation-name: beginning;
+  animation-duration: 1s;
+}
+
+@keyframes beginning {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+

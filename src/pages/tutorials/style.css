@@ -44,7 +44,7 @@
 }
 .viewList::-webkit-scrollbar-thumb{
     width: 20px;
-    background:#accaf2;
+    background: var(--color-scrollbar);
     border-radius: 6px;
 }
 

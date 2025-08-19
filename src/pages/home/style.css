@@ -1,31 +1,7 @@
-.home {
-    animation-name: beginning;
-    animation-duration: 1s;
-}
 
-nav .login a,
-nav .name a,
-nav .navlist ul,
-nav .navlist ul li a,
-nav .language,
-nav .language p {
-    color: #4a88d9;
-    animation-name: fadeIn;
-    animation-duration: 1.5s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-}
-
-.card {
-    animation-name: push;
-    animation-duration: 2s;
-    animation-delay: 2s;
-    animation-fill-mode:forwards;
-    opacity: 0;
-}
 .home .card  .title h1 {
     font-family:'Courier New, Courier, monospace';
-    font-size: 9vw;
+    font-size: 8vw;
     margin: 0;
 }
 

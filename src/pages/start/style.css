@@ -11,15 +11,15 @@
   }
   
 .start {
+  background-color: black;
    display: -webkit-box;
    min-height: 100vh;
-   border: 1px solid black;
    margin:0;
    padding:0; 
 }
 
 .start .name{
-    color: #accaf2;
+    color: var(--color-secondary);
     font-size: 5vw;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
 }
 
 .start .name:hover {
-  color: #4a79d9;
+  color: var(--color-primary);
   scale: 1.5;
 }
 
@@ -46,9 +46,9 @@
 
 @keyframes appear{
   0%{
-    color: #ffffff
+    opacity: 0;
   }
   100%{
-    color:#accaf2
+    opacity: 1;
   }
 }
