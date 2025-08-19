@@ -11,10 +11,14 @@
   font-display: block;
 }
 
+
 .AboutUs .card .SobreNosotros {
   align-self: center;
 }
 
+.AboutUs .card h2 {
+  color: var(--color-accent)
+}
 .AboutUs .card p {
   text-align: justify;
   justify-self: center;

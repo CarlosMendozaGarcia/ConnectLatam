@@ -5,7 +5,7 @@ import { Banner } from "../../components/Banner/banner.jsx";
 import { Card } from "../../components/Card/card.jsx";
 
 export const Tutorials = () => {
-  const Generaltutorials = [
+  const generalTutorials = [
     {
       title: "Duckad",
       link: "https://drive.google.com/file/d/1aNLgrHxGl3zRf5p74wwAceyUE7ORY-Wv/view?usp=sharing",
@@ -38,7 +38,7 @@ export const Tutorials = () => {
     },
   ];
 
-  const Streamingtutorials = [
+  const streamingTutorials = [
     {
       title: "Duckad",
       link: "https://drive.google.com/file/d/1aNLgrHxGl3zRf5p74wwAceyUE7ORY-Wv/view?usp=sharing",
@@ -70,7 +70,7 @@ export const Tutorials = () => {
       img: "src/assets/imgs/Enhypen.png",
     },
   ];
-  const Comebacktutorials = [
+  const comebackTutorials = [
     {
       title: "Duckad",
       link: "https://drive.google.com/file/d/1aNLgrHxGl3zRf5p74wwAceyUE7ORY-Wv/view?usp=sharing",
@@ -111,7 +111,7 @@ export const Tutorials = () => {
           <div className="General">
             <h3>General</h3>
             <div className="viewList">
-              {Generaltutorials.map((tutorial, i) => (
+              {generalTutorials.map((tutorial, i) => (
                 <a
                   key={i}
                   href={tutorial.link}
@@ -126,7 +126,7 @@ export const Tutorials = () => {
           <div className="Streaming">
             <h3>Streaming</h3>
             <div className="viewList">
-              {Streamingtutorials.map((tutorial, i) => (
+              {streamingTutorials.map((tutorial, i) => (
                 <a
                   key={i}
                   href={tutorial.link}
@@ -141,7 +141,7 @@ export const Tutorials = () => {
           <div className="Comeback">
             <h3>Comeback</h3>
             <div className="viewList">
-              {Comebacktutorials.map((tutorial, i) => (
+              {comebackTutorials.map((tutorial, i) => (
                 <a
                   key={i}
                   href={tutorial.link}

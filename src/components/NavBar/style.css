@@ -42,7 +42,6 @@ nav .name {
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
 }
 
 nav .name h1 {

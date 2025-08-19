@@ -1,51 +1,41 @@
 
-.visor {
-    border: 1px solid white;
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.visor-desktop {
+  position: relative;
+  display: flex;
+  flex-grow: 0.7;
+  align-items: center;
+  justify-content: center;
 }
 
-/* .visor div {
-    border: 1px solid white;
-} */
-
-.visor .projector {
-    position: relative;
-    display:flex;
-    flex-grow: 0.7;
-    align-items: center;
-    justify-content: center;
+.visor-desktop img {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
 }
 
-.visor .projector img {
-    border-radius: 20px;
-    height: 100%;
-    width: 100%;
+.visor-desktop .gradient-visor-overlay {
+  border: 1px solid white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-right: 1rem;
+  align-items: end;
+  height: 100%;
+  gap: 1px;
+  /* background gradient and blur */
+  background: rgba(255, 0, 0, 0);
+  background: -webkit-linear-gradient(0deg, rgba(255, 0, 0, 0) 0%, #000000 90%);
 }
 
-.visor .projector .gradient-visor-overlay {
-    border: 1px solid white;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-right: 1rem;
-    align-items: end;
-    height: 100%;
-    gap:1px;
+.visor-desktop .gradient-visor-overlay h3 {
+  color: white;
+  width: 50%;
+  flex-wrap: wrap;
+  text-align: center;
 }
-
-.visor .projector .gradient-visor-overlay h3{
-    color: white;
-    width:50%;
-    flex-wrap: wrap;
-    text-align: center;
-}
-.visor .projector .gradient-visor-overlay p{
-    width: 50%;
-    flex-wrap: wrap;
-    text-align: justify;
+.visor-desktop .gradient-visor-overlay p {
+  width: 50%;
+  flex-wrap: wrap;
+  text-align: justify;
 }
