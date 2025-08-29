@@ -1,7 +1,14 @@
 .visor-news {
-  height: inherit;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.news .news-header {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: space-around;
 }

@@ -1,6 +1,6 @@
 .layout-container {
   animation-name: beginning;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 @keyframes beginning {

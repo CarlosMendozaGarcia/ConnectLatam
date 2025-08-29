@@ -1,9 +1,8 @@
 import React from "react";
 import "./style.css";
-import { NavBar } from "../../components/NavBar/navBar.jsx";
-import { Banner } from "../../components/Banner/banner.jsx";
-import { Card } from "../../components/Card/card.jsx";
-export const Home = () => {
+import { Card } from "../../components/Card/card";
+
+export const Home: React.FC = () => {
   return (
     <div className="home">
       <Card>
@@ -16,3 +15,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;

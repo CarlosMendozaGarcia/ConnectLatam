@@ -1,31 +1,43 @@
-
 .visor-desktop {
+  width: 90%;
+  height: auto;
   position: relative;
   display: flex;
-  flex-grow: 0.7;
   align-items: center;
   justify-content: center;
 }
 
-.visor-desktop img {
+.visor-desktop-img {
   border-radius: 20px;
-  height: 100%;
   width: 100%;
+  object-fit: cover;
+  height: auto;
+  max-width: none;  
 }
 
 .visor-desktop .gradient-visor-overlay {
-  border: 1px solid white;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-right: 1rem;
   align-items: end;
   height: 100%;
+  width: 100%;
   gap: 1px;
   /* background gradient and blur */
+  
+  border-radius: 20px;
   background: rgba(255, 0, 0, 0);
   background: -webkit-linear-gradient(0deg, rgba(255, 0, 0, 0) 0%, #000000 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f85032', endColorstr='#4a88d9', GradientType=0);
+  backdrop-filter: blur(2.3px);
+}
+
+.visor-desktop .gradient-visor-overlay .info{
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+  align-items: end;
 }
 
 .visor-desktop .gradient-visor-overlay h3 {

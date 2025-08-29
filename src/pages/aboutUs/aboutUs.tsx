@@ -1,9 +1,8 @@
 import React from "react";
 import "./style.css";
-import { NavBar } from "../../components/NavBar/navBar.jsx";
-import { Banner } from "../../components/Banner/banner.jsx";
-import { Card } from "../../components/Card/card.jsx";
-export const AboutUs = () => {
+import { Card } from "../../components/Card/card";
+
+export const AboutUs: React.FC = () => {
   return (
     <div className="AboutUs">
       <Card>
@@ -69,3 +68,5 @@ export const AboutUs = () => {
     </div>
   );
 };
+
+export default AboutUs;

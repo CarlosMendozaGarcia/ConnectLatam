@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from "react-router-dom"
 import './style.css'
 
-export const Start = () => {
+export const Start: React.FC = () => {
 
     const navigate = useNavigate()
 
@@ -19,3 +19,5 @@ export const Start = () => {
         </div>
     )
 }
+
+export default Start;

@@ -1,11 +1,15 @@
 import React from "react";
 import "./style.css";
-import { NavBar } from "../../components/NavBar/navBar.jsx";
-import { Banner } from "../../components/Banner/banner.jsx";
-import { Card } from "../../components/Card/card.jsx";
+import { Card } from "../../components/Card/card";
 
-export const Tutorials = () => {
-  const generalTutorials = [
+type Tutorial = {
+  title: string;
+  link: string;
+  img: string;
+};
+
+export const Tutorials: React.FC = () => {
+  const generalTutorials: Tutorial[] = [
     {
       title: "Duckad",
       link: "https://drive.google.com/file/d/1aNLgrHxGl3zRf5p74wwAceyUE7ORY-Wv/view?usp=sharing",
@@ -158,3 +162,5 @@ export const Tutorials = () => {
     </div>
   );
 };
+
+export default Tutorials;
